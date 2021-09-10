@@ -39,7 +39,7 @@ export const CarouselContainer = styled.div`
   background-color: red;
 `;
 export const NavContainer = styled.div`
-  background-color: green;
+  border-left: solid #adb5bd 1px;
   min-width: 105px;
   min-height: 80px;
   cursor: pointer;
@@ -52,10 +52,11 @@ export const NavContainer = styled.div`
 
   label {
     margin-right: 10px;
-    background-color: #f44336;
+
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+    padding-left: 20px;
   }
   label:before {
     position: fixed;
@@ -63,14 +64,14 @@ export const NavContainer = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #f44336;
+    background-color: #adb5bd;
     transition: 1.2s cubic-bezier(0, 0.96, 1, 0.02) background-color;
   }
   label div {
     position: relative;
     top: 0;
-    height: 5px;
-    background-color: #fff;
+    height: 0.24em;
+    background-color: #adb5bd;
     margin-bottom: 6px;
     transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width,
       0.3s ease right;
@@ -83,12 +84,13 @@ export const NavContainer = styled.div`
 
   label div:last-child {
     margin-bottom: 0;
-    transform-origin: 50px;
+    transform-origin: 30px;
   }
 
   label div:nth-child(2) {
     right: 0;
-    width: 50px;
+    width: 30px;
+    height: 0.24em;
   }
 
   #menu_checkbox:checked + label:before {
@@ -96,19 +98,21 @@ export const NavContainer = styled.div`
   }
 
   #menu_checkbox:checked + label div:first-child {
-    top: -6px;
+    top: -0.5px;
+    width: 30px;
     transform: rotateZ(45deg);
   }
 
   #menu_checkbox:checked + label div:last-child {
-    top: 6px;
+    top: 12.3px;
+    width: 27.8px;
     transform: rotateZ(45deg);
   }
 
   #menu_checkbox:checked + label div:nth-child(2) {
-    width: 65px;
-    top: 0;
-    right: 13px;
+    width: 40px;
+    top: 5px;
+    right: 5px;
     transform: rotateZ(-45deg);
   }
 `;
