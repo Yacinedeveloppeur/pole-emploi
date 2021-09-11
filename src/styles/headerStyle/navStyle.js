@@ -1,58 +1,24 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 7px;
-
-  .logoContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 15px;
-
-    .logoPoleEmploi {
-      width: 130px;
-      height: 45px;
-
-      margin-right: 20px;
-    }
-    .logoRepublique {
-      width: 73px;
-      height: 64px;
-    }
-  }
-  .logoConnectionContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-    .logoConnection {
-      width: 50px;
-      height: 45px;
-    }
-  }
-`;
-
-export const CarouselContainer = styled.div`
-  background-color: red;
-`;
 export const NavContainer = styled.div`
   border-left: solid #adb5bd 1px;
   min-width: 105px;
   min-height: 80px;
   cursor: pointer;
   display: flex;
+
   align-items: center;
 
   #menu_checkbox {
     display: none;
   }
 
+  p {
+    margin-top: 0.7px;
+  }
+
   label {
     margin-right: 10px;
-
     cursor: pointer;
     width: 30px;
     height: 30px;

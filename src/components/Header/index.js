@@ -1,16 +1,16 @@
 import React from "react";
 
 //IMAGES :
-import logoPoleEmploi from "../../images/logoPoleEmploi.svg";
-import republique from "../../images/Republique.png";
-import connection from "../../images/connection.png";
+import logoPoleEmploi from "../../images/headerImg/logoPoleEmploi.svg";
+import republique from "../../images/headerImg/Republique.png";
+import connection from "../../images/headerImg/connection.png";
 
 //COMPOSANTS :
 import Nav from "./nav";
 import Carousel from "./carousel";
 
 //STYLES :
-import { HeaderContainer } from "../../styles/headerStyle";
+import { HeaderContainer } from "../../styles//headerStyle/headerStyle";
 
 const Header = () => {
   return (

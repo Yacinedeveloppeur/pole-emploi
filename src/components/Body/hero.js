@@ -13,13 +13,25 @@ const Hero = () => {
       <div>
         <div>
           <input
+            className="input1"
             type="text"
             placeholder="Métier, compétence, mot-clé, n°d'offre"
           ></input>
-          <input type="text" placeholder="Lieu de travail"></input>
-          <button>Search</button>
+          <input
+            className="input2"
+            type="text"
+            placeholder="Lieu de travail"
+          ></input>
+          <button className="searchBtn">
+            <i className="fas fa-search"></i>
+          </button>
         </div>
-        <p>Inclure les offres de nos partenaires | EN savoir plus</p>
+        <div className="inputCheckBoxContainer">
+          <input type="checkbox" className="inputCheckBox" />
+          <label htmlFor="menu_checkbox">
+            Inclure les offres de nos partenaires | EN savoir plus
+          </label>
+        </div>
       </div>
       <div>
         <RoundButton />
