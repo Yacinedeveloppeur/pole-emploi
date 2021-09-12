@@ -1,7 +1,6 @@
 import React from "react";
 
 const Card = (props) => {
-  console.log(props.image);
   return (
     <div>
       <h3>{props.title}</h3>

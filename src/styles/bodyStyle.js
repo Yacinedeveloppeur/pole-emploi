@@ -2,6 +2,9 @@ import styled from "styled-components";
 import banner from "../images/bodyImg/banner.jpg";
 
 export const BodyContainer = styled.div`
+  button {
+    cursor: pointer;
+  }
   background-image: url(${banner});
   background-position: left;
   background-repeat: no-repeat;
@@ -47,4 +50,18 @@ export const BodyContainer = styled.div`
       height: 15px;
     }
   }
+`;
+
+export const RoundBtnStyle = styled.button`
+  background: linear-gradient(#ff9999, #ff5d53 10%);
+  /* border: solid rgba(128, 128, 128, 0.4) 4px; */
+
+  background-size: 200px;
+  color: white;
+  width: 85px;
+  height: 85px;
+  border-style: none;
+  margin: 20px;
+  margin-top: 60px;
+  border-radius: 100%;
 `;
