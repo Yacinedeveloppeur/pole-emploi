@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <BodyContainer>
       <h1>1 000 000 offres d'emploi disponibles</h1>
-      <div>
+      <div className="inputAndSearchContainer">
         <div>
           <input
             className="input1"

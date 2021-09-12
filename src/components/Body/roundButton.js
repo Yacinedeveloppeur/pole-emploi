@@ -1,8 +1,17 @@
 import React from "react";
-import { RoundBtnStyle } from "../../styles/bodyStyle";
+import { RoundBtnStyle, RoundBtnStyleContainer } from "../../styles/bodyStyle";
 
 const RoundButton = () => {
-  return <RoundBtnStyle>Round</RoundBtnStyle>;
+  return (
+    <RoundBtnStyleContainer>
+      <div>
+        <RoundBtnStyle>Round</RoundBtnStyle>
+        <div>
+          <p>M'actualiser</p>
+        </div>
+      </div>
+    </RoundBtnStyleContainer>
+  );
 };
 
 export default RoundButton;
