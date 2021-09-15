@@ -6,6 +6,7 @@ export const BodyContainer = styled.div`
     display: flex;
     width: 100%;
   }
+
   button {
     cursor: pointer;
   }
@@ -29,6 +30,11 @@ export const BodyContainer = styled.div`
     height: 58px;
     border-style: none;
     width: 280px;
+    :focus {
+      outline: none;
+      box-sizing: border-box;
+      border: 1px solid cyan;
+    }
   }
   .inputAndSearchContainer {
     display: flex;
@@ -42,9 +48,6 @@ export const BodyContainer = styled.div`
   .input1 {
     border-radius: 4px 0px 0px 4px;
     border-right: solid #adb5bd 1px;
-    :focus {
-      outline: none;
-    }
   }
   .input2 {
     :focus {
@@ -79,8 +82,8 @@ export const RoundBtnStyleContainer = styled.div`
 
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0) 53%,
-    rgba(0, 0, 0, 0.4) 53%,
+    rgba(0, 0, 0, 0) 48%,
+    rgba(0, 0, 0, 0.4) 48%,
     rgba(0, 0, 0, 0.4) 90%
   );
 
@@ -98,6 +101,12 @@ export const RoundBtnStyleContainer = styled.div`
       padding-bottom: 10px;
       width: 100%;
     }
+    p {
+      font-size: 1.2em;
+      text-align: center;
+      flex-wrap: wrap;
+      margin-top: 0px;
+    }
   }
 `;
 
@@ -112,9 +121,85 @@ export const RoundBtnStyle = styled.button`
   margin: 20px;
   margin-top: 60px;
   border-radius: 100%;
+  font-size: 2.4em;
 
   :hover {
     box-shadow: none;
     background: #ff5d53;
+  }
+`;
+
+export const MainContainer = styled.div`
+  margin-right: 20%;
+  margin-left: 20%;
+  div {
+    .titleAndInput {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      h1 {
+        font-weight: normal;
+        text-decoration: none;
+        color: #414042;
+        font-size: 3em;
+      }
+
+      margin-top: 40px;
+      .inputAndSearchContainer {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        input {
+          height: 31px;
+          border-style: none;
+          width: 300px;
+
+          border: solid #999999 1px;
+          :focus {
+            outline: none;
+            box-sizing: border-box;
+            border: 1px solid cyan;
+            height: 35px;
+            width: 306px;
+          }
+        }
+
+        button {
+          width: 35px;
+          height: 35px;
+          background-color: #787d84;
+        }
+      }
+    }
+  }
+
+  .searchBtn {
+    height: 60px;
+    background-color: #ff5d53;
+    color: white;
+    width: 62px;
+    border-radius: 0px 4px 4px 0px;
+    border-style: none;
+  }
+
+  .bigCard {
+    background-color: white;
+    display: flex;
+    height: 200px;
+    img {
+      height: 150px;
+    }
+    padding: 5px;
+    .firstBigCard {
+      display: flex;
+      align-items: center;
+      border-right: solid #adb5bd 1px;
+    }
+    .secondBigCard {
+      display: flex;
+      align-items: center;
+    }
   }
 `;

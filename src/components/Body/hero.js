@@ -6,6 +6,10 @@ import RoundButton from "./roundButton";
 //STYLES :
 import { BodyContainer } from "../../styles/bodyStyle";
 
+//IMAGES
+import espacePers from "../../images/bodyImg/espacePers.png";
+import esImg from "../../images/bodyImg/es.png";
+
 const Hero = () => {
   return (
     <BodyContainer>
@@ -34,13 +38,42 @@ const Hero = () => {
         </div>
       </div>
       <div>
-        <RoundButton />
-        <RoundButton />
-        <RoundButton />
-        <RoundButton />
-        <RoundButton />
-        <RoundButton />
-        <RoundButton />
+        <RoundButton
+          btnDescription={<i className="fas fa-sync"></i>}
+          btnSubTitle="M'actualiser"
+          btnSubTitle2="28.08.2021 > 15.09.2021"
+        />
+        <RoundButton
+          btnDescription={
+            <img src={espacePers} alt="espace personnel" width="55px" />
+          }
+          btnSubTitle="Gérer mon dossier,"
+          btnSubTitle2="Publier mon CV"
+        />
+        <RoundButton
+          btnDescription={<i className="fas fa-pen-nib"></i>}
+          btnSubTitle="M'inscrire, me réinscrire"
+          btnSubTitle2="(demandeur d'emploi)"
+        />
+        <RoundButton
+          btnDescription={<i className="far fa-file-alt"></i>}
+          btnSubTitle="Allocations et aides"
+        />
+        <RoundButton
+          btnDescription={<i className="fas fa-book"></i>}
+          btnSubTitle="Trouver ma"
+          btnSubTitle2="formation"
+        />
+        <RoundButton
+          btnDescription={
+            <img src={esImg} alt="espace personnel" width="50px" />
+          }
+          btnSubTitle="Emploi Store"
+        />
+        <RoundButton
+          btnDescription={<i className="fas fa-ellipsis-h"></i>}
+          btnSubTitle="Plus de services"
+        />
       </div>
     </BodyContainer>
   );

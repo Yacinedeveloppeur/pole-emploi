@@ -1,7 +1,9 @@
 import React from "react";
-import { Fragment } from "react/cjs/react.production.min";
 import Card from "./card";
 import cards from "../../data/cards";
+
+//STYLES :
+import { MainContainer } from "../../styles/bodyStyle";
 
 //IMAGES :
 
@@ -21,37 +23,48 @@ const displayCards = cards.map(function (card) {
 
 const Main = () => {
   return (
-    <Fragment>
+    <MainContainer>
       <div>
-        <h1>Acutalités de l'emploi</h1>
-        <input
-          type="text"
-          placeholder="Ex: actualisation, aide à l'embauche..."
-        ></input>
-        <button>Search</button>
-      </div>
-      <div>
-        <div>
-          <img src={accueilImg} alt="accueil" />
-          <div>
-            <h2>Pôle emploi face à la crise sanitaire covid-19</h2>
-            <p>FOIRE AUX QUESTIONS</p>
-            <button>EN SAVOIR PLUS</button>
-          </div>
-          <div>
-            <img src={mapImg} alt="carte" />
-            <h2>En direct des régions !</h2>
-            <p>
-              Des actualités, des événements, des opportunités d'emploi et de
-              formation près de chez vous
-            </p>
-            <button>L'ACTU EN REGION</button>
+        <div className="titleAndInput">
+          <h1>Acutalités de l'emploi</h1>
+          <div className="inputAndSearchContainer">
+            <input
+              className="input1"
+              type="text"
+              placeholder="Ex: actualisation, aide à l'embauche..."
+            ></input>
+            <button className="searchBtn">
+              <i className="fas fa-search"></i>
+            </button>
           </div>
         </div>
-        <button>PLUS D'ACTUALITES</button>
+        <div>
+          <div className="bigCard">
+            <div className="firstBigCard">
+              <img src={accueilImg} alt="accueil" />
+              <div>
+                <h2>Pôle emploi face à la crise sanitaire covid-19</h2>
+                <p>FOIRE AUX QUESTIONS</p>
+                <button>EN SAVOIR PLUS</button>
+              </div>
+            </div>
+            <div className="secondBigCard">
+              <img src={mapImg} alt="carte" />
+              <div>
+                <h2>En direct des régions !</h2>
+                <p>
+                  Des actualités, des événements, des opportunités d'emploi et
+                  de formation près de chez vous
+                </p>
+                <button>L'ACTU EN REGION</button>
+              </div>
+            </div>
+          </div>
+          <button>PLUS D'ACTUALITES</button>
+        </div>
       </div>
       {displayCards}
-    </Fragment>
+    </MainContainer>
   );
 };
 
