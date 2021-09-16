@@ -3,7 +3,7 @@ import Card from "./card";
 import cards from "../../data/cards";
 
 //STYLES :
-import { MainContainer } from "../../styles/bodyStyle";
+import { MainContainer, CardStyleContainer } from "../../styles/bodyStyle";
 
 //IMAGES :
 
@@ -43,7 +43,10 @@ const Main = () => {
             <div className="firstBigCard">
               <img src={accueilImg} alt="accueil" />
               <div>
-                <h2>Pôle emploi face à la crise sanitaire covid-19</h2>
+                <h2>
+                  Pôle emploi face à la crise <br />
+                  sanitaire covid-19
+                </h2>
                 <p>FOIRE AUX QUESTIONS</p>
                 <button>EN SAVOIR PLUS</button>
               </div>
@@ -60,10 +63,10 @@ const Main = () => {
               </div>
             </div>
           </div>
-          <button>PLUS D'ACTUALITES</button>
+          <CardStyleContainer>{displayCards}</CardStyleContainer>
+          <button className="plusActu">PLUS D'ACTUALITES</button>
         </div>
       </div>
-      {displayCards}
     </MainContainer>
   );
 };

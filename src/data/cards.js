@@ -8,7 +8,7 @@ import findJob from "../images/bodyImg/findJob.jpg";
 const cards = [
   {
     id: "A",
-    title: "1 Jeune, 1 mentor: Elargissez vos perspectives d'avenir!",
+    title: "«1 Jeune, 1 mentor»: Elargissez vos perspectives d'avenir!",
     description:
       "Objectif : accompagner 100 000 jeunes, en 2021, en les aidant dans leur projet professionnel.",
     image: jeuneMentor,

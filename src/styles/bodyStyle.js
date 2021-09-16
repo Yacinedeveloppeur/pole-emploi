@@ -132,6 +132,7 @@ export const RoundBtnStyle = styled.button`
 export const MainContainer = styled.div`
   margin-right: 20%;
   margin-left: 20%;
+
   div {
     .titleAndInput {
       display: flex;
@@ -185,14 +186,40 @@ export const MainContainer = styled.div`
   }
 
   .bigCard {
+    box-shadow: 0 0 0.2em #aaa6a3;
     background-color: white;
     display: flex;
     height: 200px;
+    button {
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 20px;
+      border: solid gray 1px;
+      background-color: white;
+      color: gray;
+      :hover {
+        background-color: gray;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    p {
+      font-size: 1.2em;
+    }
     img {
       height: 150px;
     }
-    padding: 5px;
+    padding: 8px;
     .firstBigCard {
+      width: 50%;
+      h2 {
+        font-weight: bold;
+        font-size: 2em;
+        color: orange;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+      }
+
       display: flex;
       align-items: center;
       border-right: solid #adb5bd 1px;
@@ -200,6 +227,68 @@ export const MainContainer = styled.div`
     .secondBigCard {
       display: flex;
       align-items: center;
+      padding-left: 15px;
+    }
+  }
+  .plusActu {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 20px;
+    border: solid gray 1px;
+    background-color: white;
+    color: gray;
+    :hover {
+      background-color: gray;
+      color: white;
+      cursor: pointer;
+    }
+  }
+`;
+
+export const CardStyleContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 380px;
+  margin: 15px 0px;
+  padding: 0px;
+
+  div {
+    box-shadow: 0 0 0.2em #aaa6a3;
+    margin: 25px 20px;
+    background-color: white;
+
+    width: 28%;
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.2em;
+    h3 {
+      padding: 0px 15px;
+      margin-bottom: 0px;
+      color: black;
+      font-size: 1.5em;
+      font-weight: normal;
+    }
+    p {
+      margin-bottom: auto;
+      padding: 0px 15px;
+    }
+
+    div {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      height: 170px;
+      background-color: red;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
     }
   }
 `;
