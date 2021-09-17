@@ -111,7 +111,7 @@ export const RoundBtnStyleContainer = styled.div`
 `;
 
 export const RoundBtnStyle = styled.button`
-  background: linear-gradient(#ff9999, #ff5d53 10%);
+  background: linear-gradient(#ff564c, #ff564c 10%);
   background-size: 200px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   color: white;
@@ -231,6 +231,7 @@ export const MainContainer = styled.div`
     }
   }
   .plusActu {
+    margin-bottom: 40px;
     padding: 10px;
     font-size: 1em;
     border-radius: 20px;
@@ -243,6 +244,14 @@ export const MainContainer = styled.div`
       cursor: pointer;
     }
   }
+  .secondSection {
+    .btnPlusActuContainer {
+      margin-top: 25px;
+
+      display: flex;
+      justify-content: center;
+    }
+  }
 `;
 
 export const CardStyleContainer = styled.div`
@@ -250,7 +259,7 @@ export const CardStyleContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  height: 380px;
+
   margin: 15px 0px;
   padding: 0px;
 
@@ -259,10 +268,11 @@ export const CardStyleContainer = styled.div`
     margin: 25px 20px;
     background-color: white;
 
-    width: 28%;
+    width: 29%;
     display: flex;
     flex-wrap: wrap;
-
+    min-height: 300px;
+    background-color: white;
     height: 100%;
     flex-direction: column;
     align-items: center;
@@ -282,13 +292,12 @@ export const CardStyleContainer = styled.div`
 
     div {
       width: 100%;
+      background-color: green;
       margin: 0px;
       padding: 0px;
-      height: 170px;
-      background-color: red;
-      width: 100%;
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: cover;
+      background-position: center;
     }
   }
 `;

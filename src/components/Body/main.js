@@ -24,7 +24,7 @@ const displayCards = cards.map(function (card) {
 const Main = () => {
   return (
     <MainContainer>
-      <div>
+      <div className="firstSection">
         <div className="titleAndInput">
           <h1>Acutalités de l'emploi</h1>
           <div className="inputAndSearchContainer">
@@ -38,7 +38,7 @@ const Main = () => {
             </button>
           </div>
         </div>
-        <div>
+        <div className="secondSection">
           <div className="bigCard">
             <div className="firstBigCard">
               <img src={accueilImg} alt="accueil" />
@@ -64,7 +64,9 @@ const Main = () => {
             </div>
           </div>
           <CardStyleContainer>{displayCards}</CardStyleContainer>
-          <button className="plusActu">PLUS D'ACTUALITES</button>
+          <div className="btnPlusActuContainer">
+            <button className="plusActu">PLUS D'ACTUALITES</button>
+          </div>
         </div>
       </div>
     </MainContainer>
