@@ -6,7 +6,7 @@ import { CarouselContainer } from "../../styles/headerStyle/carouselStyle";
 const Carousel = () => {
   return (
     <CarouselContainer>
-      <section className="carousel" aria-label="Gallery">
+      <section className="carousel" aria-label="Gallery" id="top">
         <ol className="carousel__viewport">
           <li id="carousel__slide1" tabIndex="0" className="carousel__slide">
             <div className="carousel__snapper">

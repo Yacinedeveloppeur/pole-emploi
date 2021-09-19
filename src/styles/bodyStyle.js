@@ -33,7 +33,7 @@ export const BodyContainer = styled.div`
     :focus {
       outline: none;
       box-sizing: border-box;
-      border: 1px solid cyan;
+      border: 3px solid #6a8cc3;
     }
   }
   .inputAndSearchContainer {
@@ -161,7 +161,7 @@ export const MainContainer = styled.div`
           :focus {
             outline: none;
             box-sizing: border-box;
-            border: 1px solid cyan;
+            border: 1px solid #6a8cc3;
             height: 35px;
             width: 306px;
           }

@@ -8,7 +8,6 @@ export const FooterContainer = styled.div`
     justify-content: center;
     align-items: baseline;
     div {
-      list-style: none;
       color: white;
       font-size: 1em;
       display: flex;
@@ -50,7 +49,6 @@ export const FooterContainer = styled.div`
           justify-content: center;
           ul {
             display: flex;
-
             align-items: flex-start;
           }
         }
@@ -77,6 +75,10 @@ export const FooterContainer = styled.div`
         background-color: #2b2e30;
         color: white;
         cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: white;
       }
     }
     p {

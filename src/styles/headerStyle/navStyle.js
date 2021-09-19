@@ -1,10 +1,43 @@
 import styled from "styled-components";
 
+export const NavList = styled.div`
+  margin-left: -400px;
+  padding: 40px;
+  padding-top: 15px;
+  height: 200px;
+  width: 500px;
+  background-color: white;
+  z-index: 1;
+  font-size: 1.1em;
+  ul {
+    color: gray;
+
+    li {
+      border-bottom: solid lightgray 1px;
+      :first-child {
+        i {
+          color: red;
+        }
+      }
+      margin: 10px;
+      padding: 10px;
+      color: black;
+      i {
+        font-size: 1.4em;
+        margin-right: 15px;
+      }
+      :hover {
+        background-color: lightgray;
+        cursor: pointer;
+      }
+    }
+  }
+`;
+
 export const NavContainer = styled.div`
   border-left: solid #adb5bd 1px;
   min-width: 105px;
   min-height: 80px;
-  cursor: pointer;
   display: flex;
 
   align-items: center;

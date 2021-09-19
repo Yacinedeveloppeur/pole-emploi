@@ -108,7 +108,9 @@ const index = () => {
         </div>
       </div>
       <div className="copyRightContainer">
-        <button>VERSION CONTRASTEE</button>
+        <button>
+          <a href="#top">VERSION CONTRASTEE</a>
+        </button>
         <p>COPYRIGHT 2021 © PÔLE EMPLOI</p>
       </div>
     </FooterContainer>
