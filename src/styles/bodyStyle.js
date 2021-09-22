@@ -4,7 +4,6 @@ import banner from "../images/bodyImg/banner.jpg";
 export const BodyContainer = styled.div`
   div {
     display: flex;
-    width: 100%;
   }
 
   button {
@@ -78,8 +77,6 @@ export const BodyContainer = styled.div`
 export const RoundBtnStyleContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
-
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 48%,
@@ -91,15 +88,15 @@ export const RoundBtnStyleContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
     padding-bottom: 0px;
 
     div {
-      padding-top: 0px;
-      margin-bottom: 0;
-      padding-left: 50px;
-      padding-right: 50px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      padding-left: 60px;
+      padding-right: 60px;
       padding-bottom: 10px;
-      width: 100%;
     }
     p {
       font-size: 1.2em;
@@ -119,7 +116,7 @@ export const RoundBtnStyle = styled.button`
   height: 85px;
   border-style: none;
   margin: 20px;
-  margin-top: 60px;
+  margin-top: 80px;
   border-radius: 100%;
   font-size: 2.4em;
 
@@ -130,8 +127,8 @@ export const RoundBtnStyle = styled.button`
 `;
 
 export const MainContainer = styled.div`
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: 10%;
+  margin-left: 10%;
 
   div {
     .titleAndInput {
@@ -211,7 +208,6 @@ export const MainContainer = styled.div`
     }
     padding: 8px;
     .firstBigCard {
-      width: 50%;
       h2 {
         font-weight: bold;
         font-size: 2em;

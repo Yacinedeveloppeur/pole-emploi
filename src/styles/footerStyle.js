@@ -21,6 +21,7 @@ export const FooterContainer = styled.div`
           display: flex;
           align-items: center;
           flex-direction: column;
+
           .footerBorder1 {
             margin-top: 0px;
             background-color: black;
@@ -50,6 +51,8 @@ export const FooterContainer = styled.div`
           ul {
             display: flex;
             align-items: flex-start;
+            flex-wrap: wrap;
+            width: 70%;
           }
         }
       }

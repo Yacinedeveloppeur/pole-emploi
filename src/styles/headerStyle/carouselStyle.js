@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const CarouselContainer = styled.div`
   min-width: 600px;
   height: 100%;
-  padding: 0 65px;
+  padding: auto;
   flex-wrap: wrap;
+  margin: auto;
 
   p {
     margin: 15px;

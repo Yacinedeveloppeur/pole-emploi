@@ -31,7 +31,8 @@ export const HeaderContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 15px;
+
     :hover {
       cursor: pointer;
     }
