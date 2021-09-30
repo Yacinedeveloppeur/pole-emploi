@@ -36,7 +36,7 @@ export const NavList = styled.div`
 
 export const NavContainer = styled.div`
   border-left: solid #adb5bd 1px;
-  min-width: 105px;
+
   min-height: 80px;
   display: flex;
 

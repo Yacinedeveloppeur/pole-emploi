@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
 export const CarouselContainer = styled.div`
-  min-width: 600px;
+  @media screen and (max-width: 768px) {
+    min-width: 0px;
+  }
+  min-width: 500px;
   height: 100%;
   padding: auto;
   flex-wrap: wrap;
   margin: auto;
 
   p {
-    margin: 15px;
+    margin: 5px;
   }
   * .carousel {
     width: 100%;

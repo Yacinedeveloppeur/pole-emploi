@@ -12,6 +12,12 @@ body {
   font-size: 0.7em;
   background-color: #e5e9ec;
   scroll-behavior: smooth;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: yellow;
+  }
 }
 
 code {

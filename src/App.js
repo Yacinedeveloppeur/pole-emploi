@@ -2,14 +2,15 @@ import { Fragment } from "react";
 import Body from "./components/Body";
 import Header from "./components/Header/index";
 import Footer from "./components/Footer/index";
+import { GlobalStyle } from "./styles/globalStyle";
 
 function App() {
   return (
-    <Fragment>
+    <GlobalStyle>
       <Header />
       <Body />
       <Footer />
-    </Fragment>
+    </GlobalStyle>
   );
 }
 

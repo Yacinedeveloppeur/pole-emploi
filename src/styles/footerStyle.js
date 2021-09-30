@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    width: 358px;
+  }
   background-color: #3e4249;
   div {
     background-color: #2b2e30;

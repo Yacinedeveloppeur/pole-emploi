@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    /* padding: 8px 30px;
+    width: 500px; */
+  }
   height: 65px;
   padding: 4px;
   display: flex;
@@ -15,6 +19,7 @@ export const HeaderContainer = styled.div`
     justify-content: space-around;
     align-items: center;
     margin-left: 15px;
+    width: 33.33%;
 
     .logoPoleEmploi {
       width: 130px;
@@ -27,7 +32,9 @@ export const HeaderContainer = styled.div`
       height: 64px;
     }
   }
+
   .logoConnectionContainer {
+    width: 33.33%;
     display: flex;
     justify-content: center;
     align-items: center;

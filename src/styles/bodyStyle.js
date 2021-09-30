@@ -2,6 +2,26 @@ import styled from "styled-components";
 import banner from "../images/bodyImg/banner.jpg";
 
 export const BodyContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    background-color: red;
+    /* min-height: 30px;
+    height: 300px;
+    width: 358px; */
+
+    /* padding: 65px 100px; */
+    div {
+      input {
+        width: 180px;
+        height: 38px;
+      }
+    }
+
+    button {
+      min-height: 30px;
+    }
+  }
+
+  height: 350;
   div {
     display: flex;
   }
@@ -10,10 +30,12 @@ export const BodyContainer = styled.div`
     cursor: pointer;
   }
   background-image: url(${banner});
-  background-position: left;
+
   background-repeat: no-repeat;
   background-size: 100%;
+
   min-height: 400px;
+
   color: white;
   display: flex;
   justify-content: center;
@@ -54,6 +76,10 @@ export const BodyContainer = styled.div`
     }
   }
   .searchBtn {
+    @media screen and (max-width: 768px) {
+      height: 42px;
+      width: 38px;
+    }
     height: 60px;
     background-color: #ff5d53;
     color: white;
@@ -75,8 +101,13 @@ export const BodyContainer = styled.div`
 `;
 
 export const RoundBtnStyleContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    width: 80px;
+  }
+
   display: flex;
   justify-content: center;
+
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 48%,
@@ -92,6 +123,12 @@ export const RoundBtnStyleContainer = styled.div`
     padding-bottom: 0px;
 
     div {
+      @media screen and (max-width: 768px) {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0px 0px;
+        font-size: 1em;
+      }
       margin-bottom: 0px;
       margin-top: 0px;
       padding-left: 60px;
@@ -108,6 +145,10 @@ export const RoundBtnStyleContainer = styled.div`
 `;
 
 export const RoundBtnStyle = styled.button`
+  @media screen and (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
   background: linear-gradient(#ff564c, #ff564c 10%);
   background-size: 200px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -116,9 +157,17 @@ export const RoundBtnStyle = styled.button`
   height: 85px;
   border-style: none;
   margin: 20px;
+
+  margin-bottom: 0px;
   margin-top: 80px;
   border-radius: 100%;
   font-size: 2.4em;
+  @media screen and (max-width: 768px) {
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    justify-content: space-between;
+  }
 
   :hover {
     box-shadow: none;
@@ -127,6 +176,9 @@ export const RoundBtnStyle = styled.button`
 `;
 
 export const MainContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    /* width: 358px; */
+  }
   margin-right: 10%;
   margin-left: 10%;
 
@@ -183,10 +235,13 @@ export const MainContainer = styled.div`
   }
 
   .bigCard {
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
     box-shadow: 0 0 0.2em #aaa6a3;
     background-color: white;
     display: flex;
-    height: 200px;
+
     button {
       padding: 10px;
       font-size: 1em;
@@ -251,25 +306,30 @@ export const MainContainer = styled.div`
 `;
 
 export const CardStyleContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
 
   margin: 15px 0px;
   padding: 0px;
 
   div {
+    @media screen and (max-width: 768px) {
+      width: 40%;
+      min-height: 200px;
+    }
     box-shadow: 0 0 0.2em #aaa6a3;
     margin: 25px 20px;
     background-color: white;
-
     width: 29%;
     display: flex;
     flex-wrap: wrap;
     min-height: 300px;
     background-color: white;
-    height: 100%;
+
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
@@ -284,9 +344,11 @@ export const CardStyleContainer = styled.div`
     p {
       margin-bottom: auto;
       padding: 0px 15px;
+      padding-bottom: 10px;
     }
 
     div {
+      height: 200px;
       width: 100%;
       background-color: green;
       margin: 0px;
