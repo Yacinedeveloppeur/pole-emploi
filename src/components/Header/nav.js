@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavContainer, NavList } from "../../styles/headerStyle/navStyle";
 
-const Nav = () => {
+const Nav = (props) => {
   const [nav, setNav] = useState(true);
   const [margin, setMargin] = useState("-4000px");
 
@@ -24,7 +24,11 @@ const Nav = () => {
 
   return (
     <>
-      <div style={{ position: "relative" }}>
+      <div
+        style={{
+          position: "relative",
+        }}
+      >
         <NavContainer>
           <input type="checkbox" id="menu_checkbox" />
 
@@ -33,7 +37,7 @@ const Nav = () => {
             <div></div>
             <div></div>
           </label>
-          <p>MENU</p>
+          <p className={props.hideNav}>MENU</p>
         </NavContainer>
       </div>
       <NavList

@@ -3,9 +3,9 @@ import React from "react";
 //STYLES :
 import { CarouselContainer } from "../../styles/headerStyle/carouselStyle";
 
-const Carousel = () => {
+const Carousel = (props) => {
   return (
-    <CarouselContainer>
+    <CarouselContainer className={props.hideCarousel}>
       <section className="carousel" aria-label="Gallery" id="top">
         <ol className="carousel__viewport">
           <li id="carousel__slide1" tabIndex="0" className="carousel__slide">

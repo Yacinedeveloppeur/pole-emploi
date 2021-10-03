@@ -1,7 +1,20 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
+  @media screen and (max-width: 1200px) {
+    .hideCarousel {
+      display: none;
+    }
+  }
   @media screen and (max-width: 768px) {
+    .hideConnexion,
+    .hideNav {
+      display: none;
+    }
+    .logoConnectionContainer {
+      margin-left: 150px;
+      margin-bottom: 8px;
+    }
   }
   height: 65px;
   padding: 4px;
@@ -37,10 +50,13 @@ export const HeaderContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-right: 15px;
-
-    :hover {
-      cursor: pointer;
+    img,
+    span {
+      :hover {
+        cursor: pointer;
+      }
     }
+
     .logoConnection {
       width: 50px;
       height: 45px;

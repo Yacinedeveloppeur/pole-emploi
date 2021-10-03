@@ -19,7 +19,7 @@ const Hero = () => {
           <input
             className="input1"
             type="text"
-            placeholder="Métier, compétence, mot-clé, n°d'offre"
+            placeholder="Métier, compétence"
           ></input>
           <input
             className="input2"

@@ -10,7 +10,6 @@ const index = () => {
           <ul>
             <li>
               <p>AUTRES SITES POLE EMPLOI</p>
-
               <p className="footerBorder1"></p>
             </li>
             <li>

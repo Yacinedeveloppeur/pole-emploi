@@ -24,13 +24,13 @@ const Header = () => {
             alt="pole emploi"
           />
 
-          <Nav />
+          <Nav hideNav="hideNav" />
         </div>
-        <Carousel />
+        <Carousel hideCarousel="hideCarousel" />
 
         <div className="logoConnectionContainer">
           <img className="logoConnection" src={connection} alt="connection" />
-          <span>CONNEXION</span>
+          <span className="hideConnexion">CONNEXION</span>
         </div>
       </HeaderContainer>
     </div>

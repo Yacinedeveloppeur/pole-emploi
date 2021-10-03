@@ -9,6 +9,10 @@ export const NavList = styled.div`
   background-color: white;
   z-index: 1;
   font-size: 1.1em;
+  @media screen and (max-width: 768px) {
+    padding-left: 80px;
+    width: 200px;
+  }
   ul {
     color: gray;
 

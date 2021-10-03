@@ -2,12 +2,15 @@ import styled from "styled-components";
 import banner from "../images/bodyImg/banner.jpg";
 
 export const BodyContainer = styled.div`
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
+    h1 {
+      padding-left: 10px;
+    }
     background-color: red;
 
     div {
       input {
-        width: 180px;
+        width: 140px;
         height: 38px;
       }
     }
@@ -41,6 +44,7 @@ export const BodyContainer = styled.div`
     font-weight: normal;
   }
   input {
+    padding-left: 8px;
     height: 58px;
     border-style: none;
     width: 280px;
@@ -69,7 +73,7 @@ export const BodyContainer = styled.div`
     }
   }
   .searchBtn {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       height: 42px;
       width: 38px;
     }
@@ -183,6 +187,11 @@ export const MainContainer = styled.div`
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0px;
+      }
       h1 {
         font-weight: normal;
         text-decoration: none;
@@ -198,9 +207,14 @@ export const MainContainer = styled.div`
         justify-content: center;
 
         input {
+          padding-left: 5px;
           height: 31px;
           border-style: none;
           width: 300px;
+          @media screen and (max-width: 1200px) {
+            width: 250px;
+            margin-bottom: 40px;
+          }
 
           border: solid #999999 1px;
           :focus {
@@ -209,6 +223,9 @@ export const MainContainer = styled.div`
             border: 1px solid #6a8cc3;
             height: 35px;
             width: 306px;
+            @media screen and (max-width: 1200px) {
+              width: 250px;
+            }
           }
         }
 
@@ -265,11 +282,15 @@ export const MainContainer = styled.div`
         color: orange;
         flex-wrap: wrap;
         margin-bottom: 0;
+        padding-right: 10px;
       }
 
       display: flex;
       align-items: center;
       border-right: solid #adb5bd 1px;
+      @media screen and (max-width: 1200px) {
+        border-right: none;
+      }
     }
     .secondBigCard {
       display: flex;
@@ -316,6 +337,9 @@ export const CardStyleContainer = styled.div`
     @media screen and (max-width: 1200px) {
       width: 40%;
       min-height: 200px;
+    }
+    @media screen and (max-width: 768px) {
+      width: 80%;
     }
     box-shadow: 0 0 0.2em #aaa6a3;
     margin: 25px 20px;

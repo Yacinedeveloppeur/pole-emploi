@@ -5,6 +5,11 @@ export const FooterContainer = styled.div`
   }
   background-color: #3e4249;
   div {
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
     background-color: #2b2e30;
     display: flex;
     justify-content: center;
@@ -21,7 +26,7 @@ export const FooterContainer = styled.div`
 
         li {
           display: flex;
-          align-items: center;
+          /* align-items: center; */
           flex-direction: column;
 
           .footerBorder1 {

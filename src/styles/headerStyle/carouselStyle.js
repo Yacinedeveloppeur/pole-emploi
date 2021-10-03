@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const CarouselContainer = styled.div`
   @media screen and (max-width: 1200px) {
-    min-width: 0px;
+    /* min-width: 0px;   */
   }
+
   min-width: 500px;
   height: 100%;
   padding: auto;
