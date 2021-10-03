@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
   @media screen and (max-width: 768px) {
-    /* padding: 8px 30px;
-    width: 500px; */
   }
   height: 65px;
   padding: 4px;

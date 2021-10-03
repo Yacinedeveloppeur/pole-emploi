@@ -4,7 +4,7 @@ import React from "react";
 import RoundButton from "./roundButton";
 
 //STYLES :
-import { BodyContainer } from "../../styles/bodyStyle";
+import { BodyContainer, BackgroundBtn } from "../../styles/bodyStyle";
 
 //IMAGES
 import espacePers from "../../images/bodyImg/espacePers.png";
@@ -37,7 +37,7 @@ const Hero = () => {
           </label>
         </div>
       </div>
-      <div>
+      <BackgroundBtn>
         <RoundButton
           btnDescription={<i className="fas fa-sync"></i>}
           btnSubTitle="M'actualiser"
@@ -54,27 +54,32 @@ const Hero = () => {
           btnDescription={<i className="fas fa-pen-nib"></i>}
           btnSubTitle="M'inscrire, me réinscrire"
           btnSubTitle2="(demandeur d'emploi)"
+          hideBtn="hideBtn"
         />
         <RoundButton
           btnDescription={<i className="far fa-file-alt"></i>}
           btnSubTitle="Allocations et aides"
+          hideBtn="hideBtn"
         />
         <RoundButton
           btnDescription={<i className="fas fa-book"></i>}
           btnSubTitle="Trouver ma"
           btnSubTitle2="formation"
+          hideBtn="hideBtn"
         />
         <RoundButton
           btnDescription={
             <img src={esImg} alt="espace personnel" width="50px" />
           }
           btnSubTitle="Emploi Store"
+          hideBtnEmp="hideBtn"
         />
         <RoundButton
           btnDescription={<i className="fas fa-ellipsis-h"></i>}
           btnSubTitle="Plus de services"
+          hideBtnServ="hideBtn"
         />
-      </div>
+      </BackgroundBtn>
     </BodyContainer>
   );
 };

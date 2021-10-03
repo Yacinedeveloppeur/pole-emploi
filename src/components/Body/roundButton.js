@@ -1,16 +1,21 @@
 import React from "react";
 import { RoundBtnStyle, RoundBtnStyleContainer } from "../../styles/bodyStyle";
 
-const RoundButton = (props) => {
+const RoundButton = ({
+  btnDescription,
+  btnSubTitle,
+  btnSubTitle2,
+  hideBtn,
+}) => {
   return (
-    <RoundBtnStyleContainer>
+    <RoundBtnStyleContainer className={hideBtn}>
       <div>
-        <RoundBtnStyle>{props.btnDescription}</RoundBtnStyle>
+        <RoundBtnStyle>{btnDescription}</RoundBtnStyle>
         <div>
           <p>
-            {props.btnSubTitle}
+            {btnSubTitle}
             <br></br>
-            {props.btnSubTitle2}
+            {btnSubTitle2}
           </p>
         </div>
       </div>

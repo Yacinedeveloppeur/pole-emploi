@@ -4,11 +4,7 @@ import banner from "../images/bodyImg/banner.jpg";
 export const BodyContainer = styled.div`
   @media screen and (max-width: 768px) {
     background-color: red;
-    /* min-height: 30px;
-    height: 300px;
-    width: 358px; */
 
-    /* padding: 65px 100px; */
     div {
       input {
         width: 180px;
@@ -29,13 +25,10 @@ export const BodyContainer = styled.div`
   button {
     cursor: pointer;
   }
+
   background-image: url(${banner});
-
   background-repeat: no-repeat;
-  background-size: 100%;
-
-  min-height: 400px;
-
+  background-position-y: center;
   color: white;
   display: flex;
   justify-content: center;
@@ -100,20 +93,26 @@ export const BodyContainer = styled.div`
   }
 `;
 
-export const RoundBtnStyleContainer = styled.div`
-  @media screen and (max-width: 768px) {
-    width: 80px;
+export const BackgroundBtn = styled.div`
+  @media screen and (max-width: 1200px) {
+    .hideBtn {
+      display: none;
+    }
   }
-
-  display: flex;
-  justify-content: center;
-
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 48%,
     rgba(0, 0, 0, 0.4) 48%,
     rgba(0, 0, 0, 0.4) 90%
   );
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+`;
+
+export const RoundBtnStyleContainer = styled.div`
+  display: flex;
+  justify-content: center;
 
   div {
     display: flex;
@@ -131,8 +130,6 @@ export const RoundBtnStyleContainer = styled.div`
       }
       margin-bottom: 0px;
       margin-top: 0px;
-      padding-left: 60px;
-      padding-right: 60px;
       padding-bottom: 10px;
     }
     p {
@@ -159,7 +156,7 @@ export const RoundBtnStyle = styled.button`
   margin: 20px;
 
   margin-bottom: 0px;
-  margin-top: 80px;
+
   border-radius: 100%;
   font-size: 2.4em;
   @media screen and (max-width: 768px) {
@@ -177,7 +174,6 @@ export const RoundBtnStyle = styled.button`
 
 export const MainContainer = styled.div`
   @media screen and (max-width: 768px) {
-    /* width: 358px; */
   }
   margin-right: 10%;
   margin-left: 10%;
@@ -317,7 +313,7 @@ export const CardStyleContainer = styled.div`
   padding: 0px;
 
   div {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       width: 40%;
       min-height: 200px;
     }
