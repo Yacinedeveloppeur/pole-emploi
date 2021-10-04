@@ -8,6 +8,13 @@ export const FooterContainer = styled.div`
     @media screen and (max-width: 768px) {
       flex-wrap: wrap;
       flex-direction: column;
+      padding-right: 20%;
+      padding-left: 20%;
+    }
+
+    @media screen and (max-width: 600px) {
+      padding-left: 0%;
+      padding-right: 0%;
     }
 
     background-color: #2b2e30;
@@ -26,7 +33,10 @@ export const FooterContainer = styled.div`
 
         li {
           display: flex;
-          /* align-items: center; */
+          align-items: center;
+          @media screen and (max-width: 768px) {
+            align-items: baseline;
+          }
           flex-direction: column;
 
           .footerBorder1 {

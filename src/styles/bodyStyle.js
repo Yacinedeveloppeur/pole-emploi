@@ -6,7 +6,6 @@ export const BodyContainer = styled.div`
     h1 {
       padding-left: 10px;
     }
-    background-color: red;
 
     div {
       input {
